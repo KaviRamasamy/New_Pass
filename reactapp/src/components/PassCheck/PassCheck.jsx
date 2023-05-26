@@ -49,24 +49,6 @@ const PasswordStrengthChecker = () => {
       stepsNeeded = password.length - 20;
     }
 
-    // Check for required characters
-    // const hasLowerCase = /[a-z]/.test(password);
-    // const hasUpperCase = /[A-Z]/.test(password);
-    // const hasDigit = /[0-9]/.test(password);
-
-    // if (!hasLowerCase) {
-    //   stepsNeeded++;
-    //   //   console.log(stepsNeeded);
-    // }
-    // if (!hasUpperCase) {
-    //   stepsNeeded++;
-    //   console.log(stepsNeeded);
-    // }
-    // if (!hasDigit) {
-    //   stepsNeeded++;
-    //   //   console.log(stepsNeeded);
-    // }
-
     // Check for repeating characters
     for (let i = 0; i < password.length - 2; i++) {
       if (
